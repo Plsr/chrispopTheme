@@ -43,7 +43,7 @@
 			</ul>
 	
 			<ul class="nav">
-				<?php html5blank_nav(); ?>
+				 <?php wp_list_pages('title_li='); ?>
 			</ul>
 		
 		</div>
