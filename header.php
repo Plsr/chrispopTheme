@@ -26,48 +26,27 @@
 
     <!-- Webfonts -->
     <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css' >	
+</head>
 
-    
-
+<body>
+	<!-- header -->
+	<header class="header-bg clearfix">			
+		<div class="header-content">
+			<ul class="branding">
+				<li class="logo">
+					<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/logo.png"></a>
+				</li>
+				<li class="title">
+					<a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+				</li>
+			</ul>
+	
+			<ul class="nav">
+				<?php html5blank_nav(); ?>
+			</ul>
 		
+		</div>
+	</header>
 
-	</head>
-	<body <?php body_class(); ?>>
-
-			<!-- header -->
-			<header class="header_bg clear" role="banner">
-				
-				<!-- header_cintent -->
-				<div class="header_content">
-
-					<ul class="list_reset logo_name">
-						<!-- logo -->
-						<li class="logo">
-							<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/logo.png"></a>
-						</li>
-						<!-- /logo -->
-	
-						<!-- title -->
-						<li class="title">
-							<a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-						</li>
-						<!-- /title -->
-	
-					</ul>
-					<!-- /logo_name -->
-
-
-					<!-- nav -->
-					<ul class="nav list_reset" role="navigation">
-						<?php html5blank_nav(); ?>
-					</ul>
-					<!-- /nav -->
-
-				</div>
-				<!-- /header_content --> 
-
-			</header>
-			<!-- /header -->
-		<!-- wrapper -->	
-		<div class="wrapper">
+	<div class="wrapper">
