@@ -1,6 +1,16 @@
+/*!
+Theme Name: chrispopTheme
+Theme URI: http://chrispop.de
+Description: Nope
+Author: Christian Poplawski
+Author URI: http://chrispop.de
+Version: 0.7
+*/
+
 @import 'reset';
 @import 'vars';
 
 @import 'base';
 
 @import 'header';
+@import 'content';
