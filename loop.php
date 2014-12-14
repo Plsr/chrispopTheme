@@ -16,7 +16,7 @@
 
 		<!-- post details -->
 		<div class="meta">
-			<span class="date"><a href="<?php echo get_permalink(); ?>"><?php the_time('F j, Y'); ?></a></span> |
+			<span class="date"><a href="<?php echo get_permalink(); ?>"><?php the_time('F j, Y'); ?></a></span> 
 			<span class="comments"><?php comments_popup_link( __( 'Kommentieren', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
 		</div>
 		<!-- /post details -->

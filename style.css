@@ -98,6 +98,16 @@ h1 a {
   color: #333333;
 }
 
+/* line 19, styles/_base.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 23, styles/_base.scss */
+em {
+  font-style: italic;
+}
+
 /* line 1, styles/_header.scss */
 .header-bg {
   background-color: #f8f8f8;
@@ -135,13 +145,12 @@ h1 a {
   background-color: #dddddd;
   padding: 7px;
   text-decoration: none;
-  color: #333;
+  color: #666666;
   transition: .5s;
 }
 /* line 36, styles/_header.scss */
 .nav li a:hover {
-  color: #f8f8f8;
-  background-color: #2c3e50;
+  background-color: #d5d9dc;
   transition: .5s;
 }
 
@@ -149,10 +158,11 @@ h1 a {
 article {
   max-width: 700px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 80px;
+  padding-bottom: 100px;
 }
 
-/* line 7, styles/_content.scss */
+/* line 8, styles/_content.scss */
 h2 {
   font-family: "Cabin", sans-serif;
   font-size: 1.8em;
@@ -163,42 +173,113 @@ h2 {
   max-width: 600px;
   margin: 0 auto 40px auto;
 }
-/* line 17, styles/_content.scss */
+/* line 18, styles/_content.scss */
 h2 a {
   color: white;
   background-color: #2c3e50;
   padding: 10px;
   text-decoration: none;
 }
-/* line 23, styles/_content.scss */
+/* line 24, styles/_content.scss */
 h2 a:hover {
   background-color: #3a5269;
   transition: .5s;
 }
 
-/* line 30, styles/_content.scss */
+/* line 32, styles/_content.scss */
 .post-content {
   margin-top: 30px;
-}
-/* line 33, styles/_content.scss */
-.post-content p {
   line-height: 1.8em;
   color: #333333;
+}
+/* line 37, styles/_content.scss */
+.post-content p {
   max-width: 600px;
   margin: 0 auto;
   padding-bottom: 1.8em;
 }
-/* line 41, styles/_content.scss */
+/* line 43, styles/_content.scss */
 .post-content img {
   max-width: 700px;
   width: 100%;
   padding-bottom: 1.8em;
 }
+/* line 49, styles/_content.scss */
+.post-content ul {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-bottom: 1.8em;
+  list-style-type: disc;
+}
+/* line 57, styles/_content.scss */
+.post-content ol {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-bottom: 1.8em;
+  list-style-type: decimal;
+}
+/* line 65, styles/_content.scss */
+.post-content a {
+  color: #2c3e50;
+}
+/* line 69, styles/_content.scss */
+.post-content blockquote {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-bottom: 0;
+  margin-bottom: 1.8em;
+  border-left: 2px solid #2c3e50;
+  font-style: italic;
+  color: #666666;
+}
+/* line 79, styles/_content.scss */
+.post-content blockquote p {
+  padding-bottom: 0;
+}
 
-/* line 48, styles/_content.scss */
+/* line 85, styles/_content.scss */
 .meta {
+  padding: 20px 0;
   max-width: 600px;
   display: block;
   text-align: center;
   margin: 0 auto;
+  font-family: "Cabin", sans-serif;
+  font-size: 0.8em;
+}
+/* line 93, styles/_content.scss */
+.meta a {
+  color: #666666;
+  text-decoration: none;
+}
+/* line 100, styles/_content.scss */
+.meta .date a, .meta .comments a {
+  padding: 10px;
+  background-color: #f8f8f8;
+  transition: .5s;
+}
+/* line 105, styles/_content.scss */
+.meta .date a:hover, .meta .comments a:hover {
+  background-color: #d5d9dc;
+  transition: .5s;
+}
+/* line 112, styles/_content.scss */
+.meta .comments {
+  margin-left: 20px;
+}
+
+/* line 1, styles/_footer.scss */
+footer {
+  background-color: #151c23;
+  padding: 40px 0;
+  text-align: center;
+  color: #d5d9dc;
+  line-height: 1.8em;
+}
+/* line 8, styles/_footer.scss */
+footer a {
+  color: white;
 }
