@@ -8,6 +8,7 @@ article {
 h2 {
 	font-family: $headline-font;
 	font-size: 1.8em;
+	line-height: 2.2em;
 	text-transform: uppercase;
 	font-weight: 700;
 	display: block;
@@ -23,6 +24,23 @@ h2 {
 
 		&:hover {
 			background-color: $dark-blue-lighten;
+			transition: .5s;
+		}
+	}
+}
+
+.linked-list-item {
+	line-height: 1.4em;
+
+	a {
+		color: $dark-blue;
+		background-color: transparent;
+		padding: 0;
+		text-decoration: none;
+
+		&:hover {
+			background-color: transparent;
+			text-decoration: underline;
 			transition: .5s;
 		}
 	}

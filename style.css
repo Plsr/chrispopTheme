@@ -166,6 +166,7 @@ article {
 h2 {
   font-family: "Cabin", sans-serif;
   font-size: 1.8em;
+  line-height: 2.2em;
   text-transform: uppercase;
   font-weight: 700;
   display: block;
@@ -173,38 +174,56 @@ h2 {
   max-width: 600px;
   margin: 0 auto 40px auto;
 }
-/* line 18, styles/_content.scss */
+/* line 19, styles/_content.scss */
 h2 a {
   color: white;
   background-color: #2c3e50;
   padding: 10px;
   text-decoration: none;
 }
-/* line 24, styles/_content.scss */
+/* line 25, styles/_content.scss */
 h2 a:hover {
   background-color: #3a5269;
   transition: .5s;
 }
 
 /* line 32, styles/_content.scss */
+.linked-list-item {
+  line-height: 1.4em;
+}
+/* line 35, styles/_content.scss */
+.linked-list-item a {
+  color: #2c3e50;
+  background-color: transparent;
+  padding: 0;
+  text-decoration: none;
+}
+/* line 41, styles/_content.scss */
+.linked-list-item a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  transition: .5s;
+}
+
+/* line 50, styles/_content.scss */
 .post-content {
   margin-top: 30px;
   line-height: 1.8em;
   color: #333333;
 }
-/* line 37, styles/_content.scss */
+/* line 55, styles/_content.scss */
 .post-content p {
   max-width: 600px;
   margin: 0 auto;
   padding-bottom: 1.8em;
 }
-/* line 43, styles/_content.scss */
+/* line 61, styles/_content.scss */
 .post-content img {
   max-width: 700px;
   width: 100%;
   padding-bottom: 1.8em;
 }
-/* line 49, styles/_content.scss */
+/* line 67, styles/_content.scss */
 .post-content ul {
   max-width: 600px;
   margin: 0 auto;
@@ -212,7 +231,7 @@ h2 a:hover {
   padding-bottom: 1.8em;
   list-style-type: disc;
 }
-/* line 57, styles/_content.scss */
+/* line 75, styles/_content.scss */
 .post-content ol {
   max-width: 600px;
   margin: 0 auto;
@@ -220,11 +239,11 @@ h2 a:hover {
   padding-bottom: 1.8em;
   list-style-type: decimal;
 }
-/* line 65, styles/_content.scss */
+/* line 83, styles/_content.scss */
 .post-content a {
   color: #2c3e50;
 }
-/* line 69, styles/_content.scss */
+/* line 87, styles/_content.scss */
 .post-content blockquote {
   max-width: 600px;
   margin: 0 auto;
@@ -235,12 +254,12 @@ h2 a:hover {
   font-style: italic;
   color: #666666;
 }
-/* line 79, styles/_content.scss */
+/* line 97, styles/_content.scss */
 .post-content blockquote p {
   padding-bottom: 0;
 }
 
-/* line 85, styles/_content.scss */
+/* line 103, styles/_content.scss */
 .meta {
   padding: 20px 0;
   max-width: 600px;
@@ -250,23 +269,23 @@ h2 a:hover {
   font-family: "Cabin", sans-serif;
   font-size: 0.8em;
 }
-/* line 93, styles/_content.scss */
+/* line 111, styles/_content.scss */
 .meta a {
   color: #666666;
   text-decoration: none;
 }
-/* line 100, styles/_content.scss */
+/* line 118, styles/_content.scss */
 .meta .date a, .meta .comments a {
   padding: 10px;
   background-color: #f8f8f8;
   transition: .5s;
 }
-/* line 105, styles/_content.scss */
+/* line 123, styles/_content.scss */
 .meta .date a:hover, .meta .comments a:hover {
   background-color: #d5d9dc;
   transition: .5s;
 }
-/* line 112, styles/_content.scss */
+/* line 130, styles/_content.scss */
 .meta .comments {
   margin-left: 20px;
 }
