@@ -4,7 +4,7 @@
 		<article>
 			<!-- post title -->
 			<?php if (is_linked_list()): ?>
-  				<h2><?php the_title(); ?>&rarr;</h2>
+  				<h2 class="linked-list-item"><a href="<?php the_linked_list_link(); ?>" title="<?php printf( esc_attr__( 'Link to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?> &rarr;</a></h2>
 			<?php else: ?>
   				<h2 class="single-headline"><?php the_title(); ?></h2>
 			<?php endif; ?>
