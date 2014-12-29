@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="15px" viewBox="0 0 24 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-mail</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="680x680" sketch:type="MSArtboardGroup" transform="translate(-48.000000, -213.000000)" fill="#231F1F">
+            <g id="Row-3" sketch:type="MSLayerGroup" transform="translate(48.000000, 209.000000)">
+                <path d="M21.895,3.966 L1.986,3.966 C0.923,3.966 0.062,4.827 0.062,5.889 L0.062,17.374 C0.062,18.437 0.923,19.298 1.986,19.298 L21.895,19.298 C22.958,19.298 23.819,18.437 23.819,17.374 L23.819,5.889 C23.819,4.827 22.958,3.966 21.895,3.966 L21.895,3.966 Z M22.77,17.618 L15.883,11.632 L22.764,5.618 L22.77,17.618 L22.77,17.618 Z M21.972,4.981 L12.603,13.17 C12.229,13.497 11.665,13.498 11.289,13.174 L1.84,4.995 L21.972,4.981 L21.972,4.981 Z M1.104,5.68 L7.98,11.632 L1.109,17.604 L1.104,5.68 L1.104,5.68 Z M1.864,18.273 L8.744,12.294 L10.634,13.93 C11.377,14.574 12.509,14.581 13.261,13.923 L15.122,12.297 L22.002,18.276 L1.864,18.273 L1.864,18.273 Z" id="envelope" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+        <g id="icon-mail" sketch:type="MSArtboardGroup"></g>
+    </g>
+</svg>

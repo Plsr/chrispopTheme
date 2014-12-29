@@ -1,3 +1,34 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-gonkla');
+	src:url('fonts/icomoon.eot?#iefix-gonkla') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-gonkla') format('woff'),
+		url('fonts/icomoon.ttf?-gonkla') format('truetype'),
+		url('fonts/icomoon.svg?-gonkla#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-paperplane:before {
+}
+.icon-twitter:before {
+}
+
+
 body {
 	background-color: $white;
 	font-family: $content-font;
@@ -22,4 +53,14 @@ strong {
 
 em {
 	font-style: italic;
+}
+
+.clearfix {
+	&:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+  }
 }

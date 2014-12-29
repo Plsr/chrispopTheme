@@ -1,25 +1,34 @@
-<div class="comments" id="comments">
+<div class="comments">
 	<?php if (post_password_required()) : ?>
-	<p><?php _e( 'Post is password protected. Enter the password to view any comments.', 'html5blank' ); ?></p>
-</div>
-
+		<p>You need to enter the post password to write a comment on this article.</p>
 	<?php return; endif; ?>
 
-<?php if (have_comments()) : ?>
-
-	<h2><?php comments_number(); ?></h2>
-
-	<ul>
-		<?php wp_list_comments('type=comment&callback=html5blankcomments'); // Custom callback in functions.php ?>
-	</ul>
-
-<?php elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
+	<?php if (have_comments()) : ?>
+		<h3><?php comments_number(); ?></h3>
 	
-	<p><?php _e( 'Comments are closed here.', 'html5blank' ); ?></p>
+		<ul>
+			<?php wp_list_comments();?>
+		</ul>
+	<?php elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
+		<p>Comments are closed, sorry.</p>
+		<p>Anyways, feel free to talk to me at <a href="http://twitter.com/_chrispop">&#xe601;Twitter</a> or via <a href="mailto:mail@chrispop.de">&#xe600;Mail</a>.
+	<?php else: ?>
+		<h3>No comments yet</h3>
+	<?php endif; ?>
 	
-<?php endif; ?>
-
-<div class="comment_form">
-	<?php comment_form(); ?>
-</div>
+	<div class="comment-form">
+		<form action="<?= home_url('/'); ?>wp-comments-post.php" method="post">
+          <div class="fields">
+            <input type="text" name="author" id="author" placeholder="Name">
+            <input type="text" name="email" id="email" placeholder="Email">
+            <input type="text" name="url" id="url" placeholder="Website">
+          </div>
+          <div class="area">
+            <textarea name="comment" placeholder="Your two cents"></textarea>
+            <button type="submit"><span class="mq-sr">Send</span></button>
+          </div>
+          <?php comment_id_fields(); ?>
+          <?php do_action('comment_form', $post->ID); ?>
+        </form>
+	</div>
 </div>
