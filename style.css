@@ -491,3 +491,8 @@ footer a {
 .comments .comment-meta .comment-edit-link {
   text-decoration: underline;
 }
+
+/* line 1, styles/_page.scss */
+.page-title {
+  padding-top: 40px;
+}
