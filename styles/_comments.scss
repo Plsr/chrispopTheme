@@ -35,6 +35,14 @@
 		min-height: 150px;
 	}
 
+	button {
+		border-radius: 0px;
+		border: 0px;
+		background-color: $dark-blue;
+		color: $white;
+		padding: 10px;
+	}
+
 	.comment-reply-title {
 		font-size: 1em;
 		padding-bottom: 0;
@@ -59,9 +67,9 @@
 
 		.comment-reply-link {
 			text-decoration: none;
-			background-color: $dark-blue;
-			padding: 5px;
-			color: $white;
+			background-color: $mid-grey;
+			padding: 10px;
+			color: $black;
 			font-size: .9em;
 		}
 	}
