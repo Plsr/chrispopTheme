@@ -496,3 +496,58 @@ footer a {
 .page-title {
   padding-top: 40px;
 }
+
+@media only screen and (min-device-width: 320px) {
+  /* line 3, styles/_mobile.scss */
+  h2 {
+    padding-left: 10px;
+  }
+
+  /* line 8, styles/_mobile.scss */
+  .post-content p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 14, styles/_mobile.scss */
+  .single-date {
+    padding-left: 10px;
+  }
+
+  /* line 19, styles/_mobile.scss */
+  .comments h3 {
+    padding-left: 10px;
+  }
+  /* line 23, styles/_mobile.scss */
+  .comments .comment-form {
+    padding: 0 10px;
+  }
+  /* line 26, styles/_mobile.scss */
+  .comments .comment-form .fields {
+    padding-bottom: 10px;
+  }
+  /* line 29, styles/_mobile.scss */
+  .comments .comment-form .fields input {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  /* line 36, styles/_mobile.scss */
+  .comments textarea {
+    max-width: 100%;
+  }
+
+  /* line 44, styles/_mobile.scss */
+  .author-info img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 40%;
+    padding-bottom: 40px;
+  }
+  /* line 52, styles/_mobile.scss */
+  .author-info .author-text {
+    float: none;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}

@@ -5,7 +5,7 @@
 
 		<!-- Meta tags -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scale=0">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<meta property="og:site_name" content="ccchris.de"/>

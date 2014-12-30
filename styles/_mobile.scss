@@ -1,0 +1,58 @@
+@media only screen and (min-device-width : 320px) {
+
+	h2 {
+		padding-left: 10px;
+	}
+
+	.post-content {
+		p {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	.single-date {
+		padding-left: 10px;
+	}
+
+	.comments {
+		h3 {
+			padding-left: 10px;
+		}
+
+		.comment-form {
+			padding: 0 10px;
+
+			.fields {
+				padding-bottom: 10px;
+
+				input {
+					width: 100%;
+					padding-bottom: 20px;
+				}
+			}
+		}
+
+		textarea {
+			max-width: 100%;
+		}
+
+
+	}
+
+	.author-info {
+		img {
+			float: none;
+			display: block;
+			margin: 0 auto;
+			max-width: 40%;
+			padding-bottom: 40px;
+		}
+
+		.author-text {
+			float: none;
+			max-width: 100%;
+			padding: 0 10px;
+		}
+	}
+}
