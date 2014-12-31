@@ -131,3 +131,31 @@ h2 {
 	}
 
 }
+
+.pagination {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	
+	.nav-previous {
+		float: right;
+	}
+
+	.nav-next {
+		float: left;
+	}
+
+	a {
+		text-decoration: none;
+		background-color: $mid-grey;
+		padding: 10px;
+		color: $dark-grey;
+		font-size: 0.8em;
+		transition: .5s;
+
+		&:hover {
+			background-color: $bluish-grey;
+			transition: .5s;
+		}
+	}
+}

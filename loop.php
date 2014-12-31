@@ -26,6 +26,12 @@
 	
 <?php endwhile; ?>
 
+<!-- Pagination -->
+<div class="pagination clearfix">
+	<span class="nav-previous"><?php next_posts_link( 'Older posts &rarr;' ); ?></span>
+	<span class="nav-next"><?php previous_posts_link( '&larr; Newer posts' ); ?></span>
+</div>
+
 <?php else: ?>
 
 	<article>
