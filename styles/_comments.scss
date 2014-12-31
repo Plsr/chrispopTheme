@@ -61,7 +61,8 @@
 
 		&:hover {
 			.reply {
-				display: inline;
+				/* Disabled until reply system is implemented */
+				display: none;
 			}
 		}
 

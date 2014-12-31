@@ -4,7 +4,7 @@
 	<?php return; endif; ?>
 
 	<?php if (have_comments()) : ?>
-		<h3><?php comments_number(); ?></h3>
+		<h3 id="comments-anchor"><?php comments_number(); ?></h3>
 	
 		<ul>
 			<?php wp_list_comments();?>
@@ -13,7 +13,7 @@
 		<p>Comments are closed, sorry.</p>
 		<p>Anyways, feel free to talk to me at <a href="http://twitter.com/_chrispop">&#xe601;Twitter</a> or via <a href="mailto:mail@chrispop.de">&#xe600;Mail</a>.
 	<?php else: ?>
-		<h3>No comments yet</h3>
+		<h3 id="comments-anchor">No comments yet</h3>
 	<?php endif; ?>
 	
 	<div class="comment-form">

@@ -468,9 +468,10 @@ footer a {
 }
 /* line 63, styles/_comments.scss */
 .comments .comment-body:hover .reply {
-  display: inline;
+  /* Disabled until reply system is implemented */
+  display: none;
 }
-/* line 68, styles/_comments.scss */
+/* line 69, styles/_comments.scss */
 .comments .comment-body .comment-reply-link {
   text-decoration: none;
   background-color: #dddddd;
@@ -478,16 +479,16 @@ footer a {
   color: #333333;
   font-size: .9em;
 }
-/* line 77, styles/_comments.scss */
+/* line 78, styles/_comments.scss */
 .comments .comment-meta {
   font-size: .8em;
 }
-/* line 80, styles/_comments.scss */
+/* line 81, styles/_comments.scss */
 .comments .comment-meta a {
   color: #666666;
   text-decoration: none;
 }
-/* line 85, styles/_comments.scss */
+/* line 86, styles/_comments.scss */
 .comments .comment-meta .comment-edit-link {
   text-decoration: underline;
 }
@@ -497,7 +498,7 @@ footer a {
   padding-top: 40px;
 }
 
-@media only screen and (min-device-width: 320px) {
+@media all and (max-width: 615px) {
   /* line 3, styles/_mobile.scss */
   h2 {
     padding-left: 10px;
@@ -535,8 +536,9 @@ footer a {
   .comments textarea {
     max-width: 100%;
   }
-
-  /* line 44, styles/_mobile.scss */
+}
+@media all and (max-width: 455px) {
+  /* line 47, styles/_mobile.scss */
   .author-info img {
     float: none;
     display: block;
@@ -544,7 +546,7 @@ footer a {
     max-width: 40%;
     padding-bottom: 40px;
   }
-  /* line 52, styles/_mobile.scss */
+  /* line 55, styles/_mobile.scss */
   .author-info .author-text {
     float: none;
     max-width: 100%;
