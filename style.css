@@ -320,6 +320,35 @@ h2 a:hover {
   margin-left: 20px;
 }
 
+/* line 135, styles/_content.scss */
+.pagination {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+/* line 140, styles/_content.scss */
+.pagination .nav-previous {
+  float: right;
+}
+/* line 144, styles/_content.scss */
+.pagination .nav-next {
+  float: left;
+}
+/* line 148, styles/_content.scss */
+.pagination a {
+  text-decoration: none;
+  background-color: #dddddd;
+  padding: 10px;
+  color: #666666;
+  font-size: 0.8em;
+  transition: .5s;
+}
+/* line 156, styles/_content.scss */
+.pagination a:hover {
+  background-color: #d5d9dc;
+  transition: .5s;
+}
+
 /* line 1, styles/_footer.scss */
 footer {
   background-color: #151c23;
@@ -536,9 +565,14 @@ footer a {
   .comments textarea {
     max-width: 100%;
   }
+
+  /* line 43, styles/_mobile.scss */
+  .pagination {
+    padding: 0px 10px 40px 10px;
+  }
 }
 @media all and (max-width: 455px) {
-  /* line 47, styles/_mobile.scss */
+  /* line 51, styles/_mobile.scss */
   .author-info img {
     float: none;
     display: block;
@@ -546,7 +580,7 @@ footer a {
     max-width: 40%;
     padding-bottom: 40px;
   }
-  /* line 55, styles/_mobile.scss */
+  /* line 59, styles/_mobile.scss */
   .author-info .author-text {
     float: none;
     max-width: 100%;
