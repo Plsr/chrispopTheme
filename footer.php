@@ -9,4 +9,13 @@
 		</div><!-- /wrapper -->
 		<?php wp_footer(); ?>
 	</body>
+	
+	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.fitvids.js"></script>
+	<script>
+  		$(document).ready(function(){
+    		// Target your .container, .wrapper, .post, etc.
+    		$(".post-content").fitVids();
+  		});
+		</script>
+
 </html>

@@ -467,40 +467,45 @@ footer a {
   margin-right: 0;
 }
 /* line 33, styles/_comments.scss */
+.comments .comment-form {
+  font-size: .8em;
+}
+/* line 37, styles/_comments.scss */
 .comments textarea {
   width: 596px;
   min-height: 150px;
 }
-/* line 38, styles/_comments.scss */
+/* line 42, styles/_comments.scss */
 .comments button {
   border-radius: 0px;
   border: 0px;
   background-color: #2c3e50;
   color: white;
   padding: 10px;
+  margin-top: 20px;
 }
-/* line 46, styles/_comments.scss */
+/* line 51, styles/_comments.scss */
 .comments .comment-reply-title {
   font-size: 1em;
   padding-bottom: 0;
 }
-/* line 51, styles/_comments.scss */
+/* line 56, styles/_comments.scss */
 .comments .comment-body {
   font-size: .9em;
   margin-bottom: 50px;
   padding: 20px;
   background-color: #f8f8f8;
 }
-/* line 57, styles/_comments.scss */
+/* line 62, styles/_comments.scss */
 .comments .comment-body .reply {
   display: none;
 }
-/* line 63, styles/_comments.scss */
+/* line 68, styles/_comments.scss */
 .comments .comment-body:hover .reply {
   /* Disabled until reply system is implemented */
   display: none;
 }
-/* line 69, styles/_comments.scss */
+/* line 74, styles/_comments.scss */
 .comments .comment-body .comment-reply-link {
   text-decoration: none;
   background-color: #dddddd;
@@ -508,16 +513,16 @@ footer a {
   color: #333333;
   font-size: .9em;
 }
-/* line 78, styles/_comments.scss */
+/* line 83, styles/_comments.scss */
 .comments .comment-meta {
   font-size: .8em;
 }
-/* line 81, styles/_comments.scss */
+/* line 86, styles/_comments.scss */
 .comments .comment-meta a {
   color: #666666;
   text-decoration: none;
 }
-/* line 86, styles/_comments.scss */
+/* line 91, styles/_comments.scss */
 .comments .comment-meta .comment-edit-link {
   text-decoration: underline;
 }
