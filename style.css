@@ -130,7 +130,13 @@ em {
   font-style: italic;
 }
 
-/* line 59, styles/_base.scss */
+/* line 58, styles/_base.scss */
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 64, styles/_base.scss */
 .clearfix:after {
   content: ".";
   clear: both;

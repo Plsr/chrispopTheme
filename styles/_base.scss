@@ -55,6 +55,11 @@ em {
 	font-style: italic;
 }
 
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+
 .clearfix {
 	&:after {
     content: ".";
