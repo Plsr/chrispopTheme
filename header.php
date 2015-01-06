@@ -11,7 +11,7 @@
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
-    <link href="<?php echo get_template_directory_uri(); ?>img//logo.png" rel="shortcut icon">
+    <link href="<?php echo get_template_directory_uri(); ?>/img/logo.png" rel="shortcut icon">
     <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 
     <!-- Webfonts -->
