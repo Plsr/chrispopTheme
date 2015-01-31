@@ -103,8 +103,8 @@ TYPOGRAPHY
 /* line 32, styles/_base.scss */
 body {
   background-color: white;
-  font-family: "Merriweather", serif;
-  font-size: 16px;
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
 }
 
 /* line 38, styles/_base.scss */
@@ -145,26 +145,21 @@ iframe {
   height: 0px;
 }
 
-/* line 1, styles/_header.scss */
-.header-bg {
-  background-color: #f8f8f8;
-  box-shadow: inset 0 -7px 9px -7px rgba(0, 0, 0, 0.2);
-}
-
-/* line 6, styles/_header.scss */
+/* line 4, styles/_header.scss */
 .header-content {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 20px;
+  border-bottom: 1px solid #dddddd;
 }
 
-/* line 13, styles/_header.scss */
+/* line 12, styles/_header.scss */
 .branding {
   text-align: center;
   list-style-type: none;
 }
 
-/* line 18, styles/_header.scss */
+/* line 17, styles/_header.scss */
 .title {
   margin-top: 20px;
 }
@@ -173,22 +168,21 @@ iframe {
 .nav {
   text-align: center;
   list-style-type: none;
-  margin-top: 30px;
-  font-size: 0.8em;
+  margin-top: 60px;
+  font-size: 0.7em;
   font-family: "Cabin", sans-serif;
 }
 /* line 29, styles/_header.scss */
 .nav li a {
-  background-color: #dddddd;
-  padding: 7px;
+  border: 1px solid #666666;
   text-decoration: none;
   color: #666666;
-  transition: .5s;
+  padding: 10px;
+  border-radius: 4px;
 }
-/* line 36, styles/_header.scss */
+/* line 37, styles/_header.scss */
 .nav li a:hover {
-  background-color: #d5d9dc;
-  transition: .5s;
+  color: #333333;
 }
 
 /* line 1, styles/_content.scss */
@@ -201,65 +195,62 @@ article {
 
 /* line 8, styles/_content.scss */
 h2 {
-  font-family: "Cabin", sans-serif;
+  font-family: "Arvo", serif;
   font-size: 1.8em;
   line-height: 1.8em;
-  text-transform: uppercase;
   font-weight: 700;
   display: block;
-  transition: .5s;
   max-width: 600px;
   margin: 0 auto;
 }
-/* line 19, styles/_content.scss */
+/* line 17, styles/_content.scss */
 h2 a {
-  color: #333333;
+  color: #256c9b;
   text-decoration: none;
 }
-/* line 23, styles/_content.scss */
+/* line 21, styles/_content.scss */
 h2 a:hover {
-  color: #3a5269;
-  transition: .5s;
+  color: #333333;
 }
 
-/* line 30, styles/_content.scss */
+/* line 27, styles/_content.scss */
 .linked-list-item {
   line-height: 1.4em;
+  font-size: 1.2em;
 }
-/* line 33, styles/_content.scss */
+/* line 31, styles/_content.scss */
 .linked-list-item a {
-  color: #2c3e50;
+  color: #333333;
   background-color: transparent;
   padding: 0;
-  text-decoration: underline;
+  text-decoration: none;
 }
-/* line 39, styles/_content.scss */
+/* line 37, styles/_content.scss */
 .linked-list-item a:hover {
-  color: #3a5269;
+  color: #256c9b;
   background-color: transparent;
   text-decoration: underline;
-  transition: .5s;
 }
 
-/* line 49, styles/_content.scss */
+/* line 46, styles/_content.scss */
 .post-content {
   margin-top: 30px;
   line-height: 1.8em;
   color: #333333;
 }
-/* line 54, styles/_content.scss */
+/* line 51, styles/_content.scss */
 .post-content p {
   max-width: 600px;
   margin: 0 auto;
   padding-bottom: 1.8em;
 }
-/* line 60, styles/_content.scss */
+/* line 57, styles/_content.scss */
 .post-content img {
   max-width: 700px;
   width: 100%;
   padding-bottom: 1.8em;
 }
-/* line 66, styles/_content.scss */
+/* line 63, styles/_content.scss */
 .post-content ul {
   max-width: 600px;
   margin: 0 auto;
@@ -267,7 +258,7 @@ h2 a:hover {
   padding-bottom: 1.8em;
   list-style-type: disc;
 }
-/* line 74, styles/_content.scss */
+/* line 71, styles/_content.scss */
 .post-content ol {
   max-width: 600px;
   margin: 0 auto;
@@ -275,27 +266,27 @@ h2 a:hover {
   padding-bottom: 1.8em;
   list-style-type: decimal;
 }
-/* line 82, styles/_content.scss */
+/* line 79, styles/_content.scss */
 .post-content a {
-  color: #2c3e50;
+  color: #256c9b;
 }
-/* line 86, styles/_content.scss */
+/* line 83, styles/_content.scss */
 .post-content blockquote {
   max-width: 600px;
   margin: 0 auto;
   padding-left: 30px;
   padding-bottom: 0;
   margin-bottom: 1.8em;
-  border-left: 2px solid #2c3e50;
+  border-left: 2px solid #256c9b;
   font-style: italic;
   color: #666666;
 }
-/* line 96, styles/_content.scss */
+/* line 93, styles/_content.scss */
 .post-content blockquote p {
   padding-bottom: 0;
 }
 
-/* line 102, styles/_content.scss */
+/* line 99, styles/_content.scss */
 .meta {
   padding: 20px 0;
   max-width: 600px;
@@ -303,44 +294,38 @@ h2 a:hover {
   text-align: center;
   margin: 0 auto;
   font-family: "Cabin", sans-serif;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
-/* line 110, styles/_content.scss */
+/* line 107, styles/_content.scss */
 .meta a {
-  color: #666666;
+  color: #888888;
   text-decoration: none;
 }
-/* line 117, styles/_content.scss */
-.meta .date a, .meta .comments a {
+/* line 114, styles/_content.scss */
+.meta .date a {
   padding: 10px;
-  background-color: #dddddd;
   transition: .5s;
 }
-/* line 122, styles/_content.scss */
-.meta .date a:hover, .meta .comments a:hover {
-  background-color: #d5d9dc;
+/* line 118, styles/_content.scss */
+.meta .date a:hover {
   transition: .5s;
-}
-/* line 129, styles/_content.scss */
-.meta .comments {
-  margin-left: 20px;
 }
 
-/* line 135, styles/_content.scss */
+/* line 126, styles/_content.scss */
 .pagination {
   max-width: 600px;
   margin: 0 auto;
   padding-bottom: 40px;
 }
-/* line 140, styles/_content.scss */
+/* line 131, styles/_content.scss */
 .pagination .nav-previous {
   float: right;
 }
-/* line 144, styles/_content.scss */
+/* line 135, styles/_content.scss */
 .pagination .nav-next {
   float: left;
 }
-/* line 148, styles/_content.scss */
+/* line 139, styles/_content.scss */
 .pagination a {
   text-decoration: none;
   background-color: #dddddd;
@@ -349,7 +334,7 @@ h2 a:hover {
   font-size: 0.8em;
   transition: .5s;
 }
-/* line 156, styles/_content.scss */
+/* line 147, styles/_content.scss */
 .pagination a:hover {
   background-color: #d5d9dc;
   transition: .5s;
@@ -382,7 +367,7 @@ footer a {
   max-width: 600px;
   border-top: 1px solid #dddddd;
   margin: 0 auto;
-  font-family: "Merriweather", serif;
+  font-family: "Cabin", sans-serif;
   color: #333333;
   line-height: 1.4em;
   padding: 20px;
@@ -391,7 +376,7 @@ footer a {
 /* line 11, styles/_author-info.scss */
 .author-info h3 {
   font-size: 1.4em;
-  font-family: "Cabin", sans-serif;
+  font-family: "Arvo", serif;
   padding-bottom: 10px;
 }
 /* line 17, styles/_author-info.scss */
@@ -450,7 +435,7 @@ footer a {
 .comments h3 {
   font-size: 1.4em;
   padding-bottom: 20px;
-  font-family: "Cabin", sans-serif;
+  font-family: "Arvo", serif;
 }
 /* line 13, styles/_comments.scss */
 .comments p {
@@ -485,7 +470,7 @@ footer a {
 .comments button {
   border-radius: 0px;
   border: 0px;
-  background-color: #2c3e50;
+  background-color: #256c9b;
   color: white;
   padding: 10px;
   margin-top: 20px;

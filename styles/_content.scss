@@ -9,38 +9,35 @@ h2 {
 	font-family: $headline-font;
 	font-size: 1.8em;
 	line-height: 1.8em;
-	text-transform: uppercase;
 	font-weight: 700;
 	display: block;
-	transition: .5s;
 	max-width: 600px;
 	margin: 0 auto;
 
 	a {
-		color: $black;
+		color: $dark-blue;
 		text-decoration: none;
 
 		&:hover {
-			color: $dark-blue-lighten;
-			transition: .5s;
+			color: $black;
 		}
 	}
 }
 
 .linked-list-item {
 	line-height: 1.4em;
+	font-size: 1.2em;
 
 	a {
-		color: $dark-blue;
+		color: $black;
 		background-color: transparent;
 		padding: 0;
-		text-decoration: underline;
+		text-decoration: none;
 
 		&:hover {
-			color: $dark-blue-lighten;
+			color: $dark-blue;
 			background-color: transparent;
 			text-decoration: underline;
-			transition: .5s;
 		}
 	}
 }
@@ -105,29 +102,23 @@ h2 {
 	display: block;
 	text-align: center;
 	margin: 0 auto;
-	font-family: $headline-font;
-	font-size: 0.8em;
+	font-family: $content-font;
+	font-size: 0.7em;
 	a {
-		color: $dark-grey;
+		color: $grey;
 		text-decoration: none;	
 	}
 	
 
-	.date, .comments {
+	.date {
 		a {
 			padding: 10px;
-			background-color: $mid-grey;
 			transition: .5s;
 
 			&:hover {
-				background-color: $bluish-grey;
 				transition: .5s;
 			}
 		}
-	}
-
-	.comments {
-		margin-left: 20px;
 	}
 
 }

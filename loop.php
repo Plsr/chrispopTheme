@@ -18,8 +18,7 @@
 		</div>
 
 		<div class="meta">
-			<span class="date"><a href="<?php echo get_permalink(); ?>"><?php the_time('F j, Y'); ?></a></span> 
-			<span class="comments"><a href="<?php echo get_permalink(); ?>#comments-anchor"><?php comments_number( 'Comment', '1 Comment', '% Comments' ); ?></a></span>
+			<span class="date"><a href="<?php echo get_permalink(); ?>"> written <?php the_time('F j, Y'); ?></a></span> 
 		</div>
 		
 	</article>
