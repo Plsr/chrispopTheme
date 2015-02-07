@@ -2,22 +2,15 @@
 	
 	<!-- Main lopp -->
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-	
+		<?php if (is_linked_list()): ?>
+			<? $format = 'linked-list'; ?>
+		<?php else: ?>
+			<?php $format = get_post_format(); ?>
+		<?php endif; ?>
+
 		<article>	
-			<!-- Post title 
-					 There are two different types of post right now with differing Headlines:
-					 Normal posts with links to their single.php's and DFLL-Posts with links to external sites
-			-->
-			<?php if (is_linked_list()): ?>
-  				<h2 class="linked-list-item"><a href="<?php the_linked_list_link(); ?>" title="<?php printf( esc_attr__( 'Link to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?> &rarr;</a></h2>
-			<?php else: ?>
-  				<h2><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-			<?php endif; ?>
-	
-			<div class="post-content">
-			<?php the_content('Read more...'); ?>
-			</div>
-	
+			<?php get_article_format($format); ?>
+			
 			<div class="meta">
 				<span class="date"><a href="<?php echo get_permalink(); ?>"> written <?php the_time('F j, Y'); ?></a></span> 
 			</div>
@@ -25,6 +18,7 @@
 		</article>
 	
 	<?php endwhile; ?>
+
 
 	<!-- Pagination -->
 	<div class="pagination clearfix">
@@ -39,7 +33,7 @@
 		</article>
 
 
-<?php endif; ?>
+	<?php endif; ?>
 	
 
 
