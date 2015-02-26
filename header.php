@@ -31,7 +31,7 @@
 		<div class="header-content">
 			<ul class="branding">
 				<li class="logo">
-					<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg"></a>
+					<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-inner.svg"></a>
 				</li>
 				<li class="title">
 					<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>

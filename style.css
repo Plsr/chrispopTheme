@@ -149,8 +149,7 @@ iframe {
 .header-content {
   max-width: 800px;
   margin: 0 auto;
-  padding: 40px 20px;
-  border-bottom: 1px solid #dddddd;
+  padding: 40px 20px 60px 20px;
 }
 
 /* line 12, styles/_header.scss */
