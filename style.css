@@ -368,29 +368,33 @@ footer a {
 }
 
 /* line 1, styles/_author-info.scss */
+.author-wrapper {
+  background-color: #dddddd;
+}
+
+/* line 5, styles/_author-info.scss */
 .author-info {
   max-width: 600px;
-  border-top: 1px solid #dddddd;
   margin: 0 auto;
-  font-family: "expo-serif-pro", serif;
+  font-family: "futura-pt", sans-serif;
   color: #333333;
   line-height: 1.4em;
   padding: 20px;
-  margin-top: 80px;
+  padding-bottom: 60px;
 }
-/* line 11, styles/_author-info.scss */
+/* line 14, styles/_author-info.scss */
 .author-info h3 {
   font-size: 1.4em;
   font-family: "futura-pt", sans-serif;
   padding-bottom: 10px;
 }
-/* line 17, styles/_author-info.scss */
+/* line 20, styles/_author-info.scss */
 .author-info img {
   float: left;
   max-width: 20%;
   padding-top: 40px;
 }
-/* line 23, styles/_author-info.scss */
+/* line 26, styles/_author-info.scss */
 .author-info .author-text {
   float: right;
   max-width: 80%;
@@ -398,7 +402,7 @@ footer a {
   padding-top: 40px;
 }
 
-/* line 31, styles/_author-info.scss */
+/* line 34, styles/_author-info.scss */
 .connect {
   max-width: 600px;
   display: block;
@@ -406,25 +410,29 @@ footer a {
   text-align: center;
   padding-top: 20px;
 }
-/* line 39, styles/_author-info.scss */
+/* line 42, styles/_author-info.scss */
 .connect a {
-  color: #333333;
+  color: #888888;
   text-decoration: none;
   font-size: 1.5em;
   text-align: center;
   margin-left: 40px;
 }
-/* line 46, styles/_author-info.scss */
+/* line 49, styles/_author-info.scss */
 .connect a:first-child {
   margin-left: 0;
 }
+/* line 53, styles/_author-info.scss */
+.connect a:hover {
+  color: #666666;
+}
 
-/* line 52, styles/_author-info.scss */
+/* line 59, styles/_author-info.scss */
 .twitter {
   float: left;
 }
 
-/* line 56, styles/_author-info.scss */
+/* line 63, styles/_author-info.scss */
 .mail {
   float: left;
 }

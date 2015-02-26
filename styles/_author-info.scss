@@ -1,12 +1,15 @@
+.author-wrapper {
+	background-color: $mid-grey;
+}
+
 .author-info {
 	max-width: 600px;
-	border-top: 1px solid $mid-grey;
 	margin: 0 auto;
-	font-family: $content-font;
+	font-family: $headline-font;
 	color: $black;
 	line-height: 1.4em;
 	padding: 20px;
-	margin-top: 80px;
+	padding-bottom: 60px;
 
 	h3 {
 		font-size: 1.4em;
@@ -37,7 +40,7 @@
 
 
 	a {
-		color: $black;
+		color: $grey;
 		text-decoration: none;
 		font-size: 1.5em;
 		text-align: center;
@@ -45,6 +48,10 @@
 		
 		&:first-child {
 			margin-left: 0;
+		}
+
+		&:hover {
+			color: $dark-grey;
 		}
 	}
 }

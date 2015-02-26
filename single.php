@@ -12,7 +12,7 @@
 			
 			<?php get_article_format($format); ?>
 			
-			<?php get_template_part('author-info'); ?>
+			
 			
 			
 		</article>
@@ -33,5 +33,5 @@
 	<?php endif; ?>
 	
 
-
+<?php get_template_part('author-info'); ?>
 <?php get_footer(); ?>
