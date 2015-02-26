@@ -17,7 +17,10 @@
     <!-- Webfonts -->
     <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-
+		
+		<!-- Typekit -->
+		<script src="//use.typekit.net/oqa5pak.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
     
     <?php wp_head(); ?>
 </head>

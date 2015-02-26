@@ -7,9 +7,9 @@ article {
 
 h2 {
 	font-family: $headline-font;
-	font-size: 1.8em;
-	line-height: 1.8em;
-	font-weight: 700;
+	font-size: 2em;
+	line-height: 1.4em;
+	font-weight: 400;
 	display: block;
 	max-width: 600px;
 	margin: 0 auto;
@@ -45,7 +45,8 @@ h2 {
 
 .post-content {
 	margin-top: 30px;
-  line-height: 1.8em;
+  line-height: 1.7em;
+  font-weight: 300;
 	color: $black;
 
 	p {	
@@ -102,21 +103,21 @@ h2 {
 	display: block;
 	text-align: center;
 	margin: 0 auto;
-	font-family: $content-font;
-	font-size: 0.7em;
+	font-family: $headline-font;
+	font-size: 0.9em;
 	a {
-		color: $grey;
+		color: $mid-grey;
 		text-decoration: none;	
 	}
 	
 
 	.date {
 		a {
-			padding: 10px;
 			transition: .5s;
 
 			&:hover {
 				transition: .5s;
+				color: $grey;
 			}
 		}
 	}
@@ -124,6 +125,7 @@ h2 {
 }
 
 .pagination {
+	font-family: $headline-font;
 	max-width: 600px;
 	margin: 0 auto;
 	padding-bottom: 40px;
@@ -138,15 +140,16 @@ h2 {
 
 	a {
 		text-decoration: none;
-		background-color: $mid-grey;
-		padding: 10px;
+		border-bottom: 2px solid $mid-grey;
+		/*border-radius: 4px;*/
+		padding-bottom: 5px;
 		color: $dark-grey;
-		font-size: 0.8em;
+		font-size: 1em;
 		transition: .5s;
 
 		&:hover {
-			background-color: $bluish-grey;
 			transition: .5s;
+			border-bottom: 2px solid $grey;
 		}
 	}
 }

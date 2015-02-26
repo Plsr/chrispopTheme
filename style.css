@@ -103,15 +103,15 @@ TYPOGRAPHY
 /* line 32, styles/_base.scss */
 body {
   background-color: white;
-  font-family: "Cabin", sans-serif;
+  font-family: "expo-serif-pro", serif;
   font-size: 18px;
 }
 
 /* line 38, styles/_base.scss */
 h1 {
   text-transform: uppercase;
-  font-family: "Cabin", sans-serif;
-  font-weight: 700;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
   font-size: 1.4em;
 }
 /* line 44, styles/_base.scss */
@@ -122,7 +122,7 @@ h1 a {
 
 /* line 50, styles/_base.scss */
 strong {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 /* line 54, styles/_base.scss */
@@ -164,25 +164,26 @@ iframe {
   margin-top: 20px;
 }
 
-/* line 22, styles/_header.scss */
+/* line 21, styles/_header.scss */
 .nav {
   text-align: center;
   list-style-type: none;
-  margin-top: 60px;
-  font-size: 0.7em;
-  font-family: "Cabin", sans-serif;
+  margin-top: 40px;
+  font-size: 1em;
+  font-family: "futura-pt", sans-serif;
 }
-/* line 29, styles/_header.scss */
+/* line 28, styles/_header.scss */
 .nav li a {
-  border: 1px solid #666666;
+  color: #dddddd;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #666666;
-  padding: 10px;
-  border-radius: 4px;
+  font-weight: 500;
+  transition: .5s;
 }
-/* line 37, styles/_header.scss */
+/* line 36, styles/_header.scss */
 .nav li a:hover {
-  color: #333333;
+  color: #888888;
+  transition: .5s;
 }
 
 /* line 1, styles/_content.scss */
@@ -195,10 +196,10 @@ article {
 
 /* line 8, styles/_content.scss */
 h2 {
-  font-family: "Arvo", serif;
-  font-size: 1.8em;
-  line-height: 1.8em;
-  font-weight: 700;
+  font-family: "futura-pt", sans-serif;
+  font-size: 2em;
+  line-height: 1.4em;
+  font-weight: 400;
   display: block;
   max-width: 600px;
   margin: 0 auto;
@@ -235,22 +236,23 @@ h2 a:hover {
 /* line 46, styles/_content.scss */
 .post-content {
   margin-top: 30px;
-  line-height: 1.8em;
+  line-height: 1.7em;
+  font-weight: 300;
   color: #333333;
 }
-/* line 51, styles/_content.scss */
+/* line 52, styles/_content.scss */
 .post-content p {
   max-width: 600px;
   margin: 0 auto;
   padding-bottom: 1.8em;
 }
-/* line 57, styles/_content.scss */
+/* line 58, styles/_content.scss */
 .post-content img {
   max-width: 700px;
   width: 100%;
   padding-bottom: 1.8em;
 }
-/* line 63, styles/_content.scss */
+/* line 64, styles/_content.scss */
 .post-content ul {
   max-width: 600px;
   margin: 0 auto;
@@ -258,7 +260,7 @@ h2 a:hover {
   padding-bottom: 1.8em;
   list-style-type: disc;
 }
-/* line 71, styles/_content.scss */
+/* line 72, styles/_content.scss */
 .post-content ol {
   max-width: 600px;
   margin: 0 auto;
@@ -266,11 +268,11 @@ h2 a:hover {
   padding-bottom: 1.8em;
   list-style-type: decimal;
 }
-/* line 79, styles/_content.scss */
+/* line 80, styles/_content.scss */
 .post-content a {
   color: #256c9b;
 }
-/* line 83, styles/_content.scss */
+/* line 84, styles/_content.scss */
 .post-content blockquote {
   max-width: 600px;
   margin: 0 auto;
@@ -281,74 +283,77 @@ h2 a:hover {
   font-style: italic;
   color: #666666;
 }
-/* line 93, styles/_content.scss */
+/* line 94, styles/_content.scss */
 .post-content blockquote p {
   padding-bottom: 0;
 }
 
-/* line 99, styles/_content.scss */
+/* line 100, styles/_content.scss */
 .meta {
   padding: 20px 0;
   max-width: 600px;
   display: block;
   text-align: center;
   margin: 0 auto;
-  font-family: "Cabin", sans-serif;
-  font-size: 0.7em;
+  font-family: "futura-pt", sans-serif;
+  font-size: 0.9em;
 }
-/* line 107, styles/_content.scss */
+/* line 108, styles/_content.scss */
 .meta a {
-  color: #888888;
+  color: #dddddd;
   text-decoration: none;
 }
-/* line 114, styles/_content.scss */
+/* line 115, styles/_content.scss */
 .meta .date a {
-  padding: 10px;
   transition: .5s;
 }
 /* line 118, styles/_content.scss */
 .meta .date a:hover {
   transition: .5s;
+  color: #888888;
 }
 
-/* line 126, styles/_content.scss */
+/* line 127, styles/_content.scss */
 .pagination {
+  font-family: "futura-pt", sans-serif;
   max-width: 600px;
   margin: 0 auto;
   padding-bottom: 40px;
 }
-/* line 131, styles/_content.scss */
+/* line 133, styles/_content.scss */
 .pagination .nav-previous {
   float: right;
 }
-/* line 135, styles/_content.scss */
+/* line 137, styles/_content.scss */
 .pagination .nav-next {
   float: left;
 }
-/* line 139, styles/_content.scss */
+/* line 141, styles/_content.scss */
 .pagination a {
   text-decoration: none;
-  background-color: #dddddd;
-  padding: 10px;
+  border-bottom: 2px solid #dddddd;
+  /*border-radius: 4px;*/
+  padding-bottom: 5px;
   color: #666666;
-  font-size: 0.8em;
+  font-size: 1em;
   transition: .5s;
 }
-/* line 147, styles/_content.scss */
+/* line 150, styles/_content.scss */
 .pagination a:hover {
-  background-color: #d5d9dc;
   transition: .5s;
+  border-bottom: 2px solid #888888;
 }
 
 /* line 1, styles/_footer.scss */
 footer {
+  font-family: "futura-pt", sans-serif;
   background-color: #151c23;
   padding: 40px 0;
   text-align: center;
   color: #d5d9dc;
   line-height: 1.8em;
 }
-/* line 8, styles/_footer.scss */
+/* line 9, styles/_footer.scss */
 footer a {
   color: white;
 }
@@ -360,6 +365,7 @@ footer a {
   color: #666666;
   max-width: 600px;
   margin: 10px auto 0px auto;
+  font-family: "futura-pt", sans-serif;
 }
 
 /* line 1, styles/_author-info.scss */
@@ -367,7 +373,7 @@ footer a {
   max-width: 600px;
   border-top: 1px solid #dddddd;
   margin: 0 auto;
-  font-family: "Cabin", sans-serif;
+  font-family: "expo-serif-pro", serif;
   color: #333333;
   line-height: 1.4em;
   padding: 20px;
@@ -376,7 +382,7 @@ footer a {
 /* line 11, styles/_author-info.scss */
 .author-info h3 {
   font-size: 1.4em;
-  font-family: "Arvo", serif;
+  font-family: "futura-pt", sans-serif;
   padding-bottom: 10px;
 }
 /* line 17, styles/_author-info.scss */
@@ -435,7 +441,7 @@ footer a {
 .comments h3 {
   font-size: 1.4em;
   padding-bottom: 20px;
-  font-family: "Arvo", serif;
+  font-family: "futura-pt", sans-serif;
 }
 /* line 13, styles/_comments.scss */
 .comments p {

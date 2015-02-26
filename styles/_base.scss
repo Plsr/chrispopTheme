@@ -37,8 +37,8 @@ body {
 
 h1 {
 	text-transform: uppercase;
-	font-family: $content-font;
-	font-weight: 700;
+	font-family: $headline-font;
+	font-weight: 500;
 	font-size: 1.4em;
 
 	a {
@@ -48,7 +48,7 @@ h1 {
 }
 
 strong {
-	font-weight: 700;
+	font-weight: 400;
 }
 
 em {
