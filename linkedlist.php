@@ -16,13 +16,22 @@
 		</article>
 	<?php endif; ?>
 
-		<?php $query = new WP_Query( array( 'post_type' => 'daily_link')); ?>
+		<?php $query = new WP_Query( array( 'post_type' => 'daily_link', 'posts_per_page' => '1')); ?>
 		<?php while ( $query->have_posts() ) { $query->the_post(); ?>
 				<article>
-					<?php get_article_format($format); ?>
+					<h2><?php the_title(); ?></h2>
+
+					<?php if(is_single()): ?>
+						<span class="single-date"><?php the_time('F j, Y'); ?></span>
+					<?php endif; ?>
+
+					<div class="post-content">
+						<?php the_content('Read more...'); ?>
+					</div>
+
 
 					<div class="meta">
-						<span class="date"><a href="<?php echo get_permalink(); ?>"> written <?php the_time('F j, Y'); ?></a></span>
+						<span class="date"> written <?php the_time('F j, Y'); ?></span>
 					</div>
 
 				</article>
