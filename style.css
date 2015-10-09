@@ -4,7 +4,7 @@ Theme URI: http://chrispop.de
 Description: Nope
 Author: Christian Poplawski
 Author URI: http://chrispop.de
-Version: 0.7
+Version: 1.0.1
 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -130,6 +130,11 @@ iframe {
   margin-top: 40px;
   font-size: 1em;
   font-family: "futura-pt", sans-serif; }
+  .nav li {
+    display: inline;
+    margin-right: 20px; }
+    .nav li:last-child {
+      margin-right: 0; }
   .nav li a {
     color: #ddd;
     text-transform: uppercase;
