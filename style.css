@@ -218,6 +218,10 @@ h2 {
     color: #666666; }
     .post-content blockquote p {
       padding-bottom: 0; }
+  .post-content.-dark {
+    padding-top: 20px;
+    background-color: #ddd;
+    font-style: italic; }
 
 .meta {
   padding: 20px 0;

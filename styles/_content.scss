@@ -49,7 +49,7 @@ h2 {
   font-weight: 300;
 	color: $black;
 
-	p {	
+	p {
 		max-width: 600px;
 		margin: 0 auto;
 		padding-bottom: 1.8em;
@@ -62,7 +62,7 @@ h2 {
 	}
 
 	iframe {
-		padding-bottom: 1.8em; 
+		padding-bottom: 1.8em;
 	}
 
 	ul {
@@ -99,6 +99,12 @@ h2 {
 			padding-bottom:  0;
 		}
 	}
+
+	&.-dark {
+		padding-top: 20px;
+		background-color: $mid-grey;
+		font-style: italic;
+	}
 }
 
 .meta {
@@ -111,9 +117,9 @@ h2 {
 	font-size: 0.9em;
 	a {
 		color: $mid-grey;
-		text-decoration: none;	
+		text-decoration: none;
 	}
-	
+
 
 	.date {
 		a {
@@ -133,7 +139,7 @@ h2 {
 	max-width: 600px;
 	margin: 0 auto;
 	padding-bottom: 40px;
-	
+
 	.nav-previous {
 		float: right;
 	}
