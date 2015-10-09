@@ -15,7 +15,7 @@ Version: 0.7
   box-sizing: border-box;
 }
 
-/* line 22, styles/_reset.scss */
+/* line 10, styles/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -38,7 +38,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 32, styles/_reset.scss */
+/* line 31, styles/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -59,7 +59,7 @@ blockquote, q {
   quotes: none;
 }
 
-/* line 45, styles/_reset.scss */
+/* line 44, styles/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -85,7 +85,6 @@ TYPOGRAPHY
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 12, styles/_base.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
@@ -102,7 +101,7 @@ TYPOGRAPHY
 
 /* line 32, styles/_base.scss */
 body {
-  background-color: white;
+  background-color: #ffffff;
   font-family: "expo-serif-pro", serif;
   font-size: 18px;
 }
@@ -173,7 +172,7 @@ iframe {
 }
 /* line 28, styles/_header.scss */
 .nav li a {
-  color: #dddddd;
+  color: #ddd;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 500;
@@ -181,7 +180,7 @@ iframe {
 }
 /* line 36, styles/_header.scss */
 .nav li a:hover {
-  color: #888888;
+  color: #888;
   transition: .5s;
 }
 
@@ -205,7 +204,7 @@ h2 {
 }
 /* line 17, styles/_content.scss */
 h2 a {
-  color: #256c9b;
+  color: #256C9B;
   text-decoration: none;
 }
 /* line 21, styles/_content.scss */
@@ -227,7 +226,7 @@ h2 a:hover {
 }
 /* line 37, styles/_content.scss */
 .linked-list-item a:hover {
-  color: #256c9b;
+  color: #256C9B;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -252,6 +251,10 @@ h2 a:hover {
   padding-bottom: 1.8em;
 }
 /* line 64, styles/_content.scss */
+.post-content iframe {
+  padding-bottom: 1.8em;
+}
+/* line 68, styles/_content.scss */
 .post-content ul {
   max-width: 600px;
   margin: 0 auto;
@@ -259,7 +262,7 @@ h2 a:hover {
   padding-bottom: 1.8em;
   list-style-type: disc;
 }
-/* line 72, styles/_content.scss */
+/* line 76, styles/_content.scss */
 .post-content ol {
   max-width: 600px;
   margin: 0 auto;
@@ -267,27 +270,27 @@ h2 a:hover {
   padding-bottom: 1.8em;
   list-style-type: decimal;
 }
-/* line 80, styles/_content.scss */
-.post-content a {
-  color: #256c9b;
-}
 /* line 84, styles/_content.scss */
+.post-content a {
+  color: #256C9B;
+}
+/* line 88, styles/_content.scss */
 .post-content blockquote {
   max-width: 600px;
   margin: 0 auto;
   padding-left: 30px;
   padding-bottom: 0;
   margin-bottom: 1.8em;
-  border-left: 2px solid #256c9b;
+  border-left: 2px solid #256C9B;
   font-style: italic;
   color: #666666;
 }
-/* line 94, styles/_content.scss */
+/* line 98, styles/_content.scss */
 .post-content blockquote p {
   padding-bottom: 0;
 }
 
-/* line 100, styles/_content.scss */
+/* line 104, styles/_content.scss */
 .meta {
   padding: 20px 0;
   max-width: 600px;
@@ -297,50 +300,50 @@ h2 a:hover {
   font-family: "futura-pt", sans-serif;
   font-size: 0.9em;
 }
-/* line 108, styles/_content.scss */
+/* line 112, styles/_content.scss */
 .meta a {
-  color: #dddddd;
+  color: #ddd;
   text-decoration: none;
 }
-/* line 115, styles/_content.scss */
+/* line 119, styles/_content.scss */
 .meta .date a {
   transition: .5s;
 }
-/* line 118, styles/_content.scss */
+/* line 122, styles/_content.scss */
 .meta .date a:hover {
   transition: .5s;
-  color: #888888;
+  color: #888;
 }
 
-/* line 127, styles/_content.scss */
+/* line 131, styles/_content.scss */
 .pagination {
   font-family: "futura-pt", sans-serif;
   max-width: 600px;
   margin: 0 auto;
   padding-bottom: 40px;
 }
-/* line 133, styles/_content.scss */
+/* line 137, styles/_content.scss */
 .pagination .nav-previous {
   float: right;
 }
-/* line 137, styles/_content.scss */
+/* line 141, styles/_content.scss */
 .pagination .nav-next {
   float: left;
 }
-/* line 141, styles/_content.scss */
+/* line 145, styles/_content.scss */
 .pagination a {
   text-decoration: none;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 2px solid #ddd;
   /*border-radius: 4px;*/
   padding-bottom: 5px;
   color: #666666;
   font-size: 1em;
   transition: .5s;
 }
-/* line 150, styles/_content.scss */
+/* line 154, styles/_content.scss */
 .pagination a:hover {
   transition: .5s;
-  border-bottom: 2px solid #888888;
+  border-bottom: 2px solid #888;
 }
 
 /* line 1, styles/_footer.scss */
@@ -354,7 +357,7 @@ footer {
 }
 /* line 9, styles/_footer.scss */
 footer a {
-  color: white;
+  color: #ffffff;
 }
 
 /* line 1, styles/_single.scss */
@@ -369,7 +372,7 @@ footer a {
 
 /* line 1, styles/_author-info.scss */
 .author-wrapper {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 
 /* line 5, styles/_author-info.scss */
@@ -412,7 +415,7 @@ footer a {
 }
 /* line 42, styles/_author-info.scss */
 .connect a {
-  color: #888888;
+  color: #888;
   text-decoration: none;
   font-size: 1.5em;
   text-align: center;
@@ -483,8 +486,8 @@ footer a {
 .comments button {
   border-radius: 0px;
   border: 0px;
-  background-color: #256c9b;
-  color: white;
+  background-color: #256C9B;
+  color: #ffffff;
   padding: 10px;
   margin-top: 20px;
 }
@@ -512,7 +515,7 @@ footer a {
 /* line 74, styles/_comments.scss */
 .comments .comment-body .comment-reply-link {
   text-decoration: none;
-  background-color: #dddddd;
+  background-color: #ddd;
   padding: 10px;
   color: #333333;
   font-size: .9em;
