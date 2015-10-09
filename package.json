@@ -1,0 +1,23 @@
+{
+  "name": "chrsipopTheme",
+  "version": "0.0.0",
+  "description": "This template is built on html5blank, a powerful shell for rapidly deploying your WordPress projects.   Credits:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Plsr/chrispopTheme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Plsr/chrispopTheme/issues"
+  },
+  "homepage": "https://github.com/Plsr/chrispopTheme",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-sass": "~2.0.4"
+  }
+}
