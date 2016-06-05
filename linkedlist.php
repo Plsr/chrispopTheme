@@ -15,7 +15,14 @@
 	</article>
 <?php endif; ?>
 
-<?php $query = new WP_Query( array( 'post_type' => 'daily_link', 'posts_per_page' => '1')); ?>
+<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+<?php $args = array (
+	'post_type' => 'daily_link',
+	'posts_per_page' => '1',
+	'paged' => $paged
+) ?>
+
+<?php $query = new WP_Query( $args ); ?>
 	<?php while ( $query->have_posts() ) { $query->the_post(); ?>
 		<article>
 			<h2><?php the_title(); ?></h2>
@@ -37,11 +44,5 @@
 			<div class="nav-previous"><?php next_posts_link( 'Older Links', $query->max_num_pages ); ?></div>
 		</div>
 	<?php } wp_reset_postdata(); ?>
-
-
-				<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts', $query->max_num_pages ); ?></div>
-
-
-
 
 <?php get_footer(); ?>
