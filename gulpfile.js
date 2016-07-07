@@ -11,6 +11,7 @@ gulp.task('sass', function() {
 gulp.task('production', function() {
   return gulp.src('styles/*.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest(''));
 });
 
