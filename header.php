@@ -22,8 +22,8 @@
     <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
 
 		<!-- Typekit -->
-		<script src="//use.typekit.net/oqa5pak.js"></script>
-		<script>try{Typekit.load();}catch(e){}</script>
+    <script src="https://use.typekit.net/oqa5pak.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <?php wp_head(); ?>
 </head>
