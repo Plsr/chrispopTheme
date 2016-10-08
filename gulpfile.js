@@ -4,7 +4,7 @@ var gulp        = require('gulp'),
 
 // Compile SASS Files to regualr css
 gulp.task('sass', function() {
-  gulp.src('styles/*.sass')
+  gulp.src('styles/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(''));
 });
@@ -14,5 +14,5 @@ gulp.task('serve', ['sass'], function() {
     proxy: "http://localhost:8888/wordpress/"
   });
 
-  gulp.watch('styles/*.sass', ['sass']);
+  gulp.watch('styles/*.scss', ['sass']);
 })
