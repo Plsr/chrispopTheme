@@ -1,50 +1,23 @@
 .header-bg {
 }
 
-.header-content {
-	max-width: 800px;
+.site-header {
 	margin: 0 auto;
-	padding: 40px 20px 60px 20px;
-
-
+	padding: 40px;
+  text-align: center;
 }
 
-.branding {
-	text-align: center;
-	list-style-type: none;
+.logo {
+  max-height: 40px;
 }
 
-	.title {
-		margin-top: 20px;
-	}
-
-.nav {
-	text-align: center;
-	list-style-type: none;
-	margin-top: 40px;
-	font-size: 1em;
-	font-family: $headline-font;
-
-	li {
-		display: inline;
-		margin-right: 20px;
-
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-
-	li a {
-		color: $mid-grey;
-		text-transform: uppercase;
-		text-decoration: none;
-		font-weight: 500;
-		transition: .5s;
-
-
-		&:hover {
-			color: $grey;
-			transition: .5s;
-		}
-	}
+.site-name {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }

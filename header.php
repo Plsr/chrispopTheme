@@ -23,22 +23,13 @@
 
 <body>
 	<!-- header -->
-	<header class="header-bg clearfix">
-		<div class="header-content">
-			<ul class="branding">
-				<li class="logo">
-					<a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-inner.svg"></a>
-				</li>
-				<li class="title">
-					<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-				</li>
-			</ul>
-
-			<ul class="nav">
-				 <?php wp_list_pages('title_li='); ?>
-			</ul>
-
-		</div>
+	<header class="site-header">
+    <a href="<?php echo home_url(); ?>">
+      <h1 class="brand">
+        <span class="site-name"><?php bloginfo('name'); ?></span>
+        <img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-inner.svg">
+      </h1>
+    </a>
 	</header>
 
 	<div class="wrapper">

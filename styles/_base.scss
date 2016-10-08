@@ -35,18 +35,6 @@ body {
 	font-size: $font-size;
 }
 
-h1 {
-	text-transform: uppercase;
-	font-family: $headline-font;
-	font-weight: 500;
-	font-size: 1.4em;
-
-	a {
-		text-decoration: none;
-		color: $black;
-	}
-}
-
 strong {
 	font-weight: 400;
 }

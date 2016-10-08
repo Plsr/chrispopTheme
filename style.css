@@ -80,15 +80,6 @@ body {
   font-family: "skolar-sans-latin", sans-serif;
   font-size: 18px; }
 
-h1 {
-  text-transform: uppercase;
-  font-family: "skolar-sans-latin", sans-serif;
-  font-weight: 500;
-  font-size: 1.4em; }
-  h1 a {
-    text-decoration: none;
-    color: #333333; }
-
 strong {
   font-weight: 400; }
 
@@ -106,38 +97,23 @@ iframe {
   visibility: hidden;
   height: 0px; }
 
-.header-content {
-  max-width: 800px;
+.site-header {
   margin: 0 auto;
-  padding: 40px 20px 60px 20px; }
+  padding: 40px;
+  text-align: center; }
 
-.branding {
-  text-align: center;
-  list-style-type: none; }
+.logo {
+  max-height: 40px; }
 
-.title {
-  margin-top: 20px; }
-
-.nav {
-  text-align: center;
-  list-style-type: none;
-  margin-top: 40px;
-  font-size: 1em;
-  font-family: "skolar-sans-latin", sans-serif; }
-  .nav li {
-    display: inline;
-    margin-right: 20px; }
-    .nav li:last-child {
-      margin-right: 0; }
-  .nav li a {
-    color: #ddd;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 500;
-    transition: .5s; }
-    .nav li a:hover {
-      color: #888;
-      transition: .5s; }
+.site-name {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
 
 article {
   max-width: 700px;
@@ -154,7 +130,7 @@ h2 {
   max-width: 600px;
   margin: 0 auto; }
   h2 a {
-    color: #256C9B;
+    color: #C15649;
     text-decoration: none; }
     h2 a:hover {
       color: #333333; }
@@ -168,7 +144,7 @@ h2 {
     padding: 0;
     text-decoration: none; }
     .linked-list-item a:hover {
-      color: #256C9B;
+      color: #C15649;
       background-color: transparent;
       text-decoration: underline; }
 
@@ -200,14 +176,14 @@ h2 {
     padding-bottom: 1.8em;
     list-style-type: decimal; }
   .post-content a {
-    color: #256C9B; }
+    color: #C15649; }
   .post-content blockquote {
     max-width: 600px;
     margin: 0 auto;
     padding-left: 30px;
     padding-bottom: 0;
     margin-bottom: 1.8em;
-    border-left: 2px solid #256C9B;
+    border-left: 2px solid #C15649;
     font-style: italic;
     color: #666666; }
     .post-content blockquote p {
@@ -350,7 +326,7 @@ footer {
   .comments button {
     border-radius: 0px;
     border: 0px;
-    background-color: #256C9B;
+    background-color: #C15649;
     color: #ffffff;
     padding: 10px;
     margin-top: 20px; }

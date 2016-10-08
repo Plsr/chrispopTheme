@@ -15,7 +15,7 @@ h2 {
 	margin: 0 auto;
 
 	a {
-		color: $dark-blue;
+		color: $accent;
 		text-decoration: none;
 
 		&:hover {
@@ -35,7 +35,7 @@ h2 {
 		text-decoration: none;
 
 		&:hover {
-			color: $dark-blue;
+			color: $accent;
 			background-color: transparent;
 			text-decoration: underline;
 		}
@@ -82,7 +82,7 @@ h2 {
 	}
 
 	a {
-		color: $dark-blue;
+		color: $accent;
 	}
 
 	blockquote {
@@ -91,7 +91,7 @@ h2 {
 		padding-left: 30px;
 		padding-bottom: 0;
 		margin-bottom: 1.8em;
-		border-left: 2px solid $dark-blue;
+		border-left: 2px solid $accent;
 		font-style: italic;
 		color: $dark-grey;
 
