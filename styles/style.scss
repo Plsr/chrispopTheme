@@ -7,8 +7,12 @@ Author URI: http://chrispop.de
 Version: 1.0.1
 */
 
+// Reset
 @import 'reset';
-@import 'vars';
+
+// Variables
+@import 'vars/colors';
+@import 'vars/typography';
 
 @import 'base';
 
