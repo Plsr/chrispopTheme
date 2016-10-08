@@ -122,17 +122,15 @@ article {
 
 h2 {
   font-family: "skolar-sans-latin", sans-serif;
-  font-size: 2em;
+  font-size: 30px;
   line-height: 1.4em;
-  font-weight: 400;
-  display: block;
   max-width: 600px;
   margin: 0 auto; }
   h2 a {
     color: #C15649;
     text-decoration: none; }
     h2 a:hover {
-      color: #333333; }
+      color: #7a322a; }
 
 .linked-list-item {
   line-height: 1.4em;
@@ -141,11 +139,12 @@ h2 {
     color: #333333;
     background-color: transparent;
     padding: 0;
-    text-decoration: none; }
+    text-decoration: none;
+    border-bottom: 1px dotted #333333; }
     .linked-list-item a:hover {
       color: #C15649;
       background-color: transparent;
-      text-decoration: underline; }
+      border-bottom: 1px dotted #C15649; }
 
 .post-content {
   margin-top: 30px;
@@ -161,7 +160,8 @@ h2 {
     width: 100%;
     padding-bottom: 1.8em; }
   .post-content iframe {
-    padding-bottom: 1.8em; }
+    padding-bottom: 1.8em;
+    max-width: 100%; }
   .post-content ul {
     max-width: 600px;
     margin: 0 auto;
@@ -176,6 +176,8 @@ h2 {
     list-style-type: decimal; }
   .post-content a {
     color: #C15649; }
+    .post-content a:hover {
+      color: #7a322a; }
   .post-content blockquote {
     max-width: 600px;
     margin: 0 auto;
