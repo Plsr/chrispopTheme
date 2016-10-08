@@ -2,20 +2,13 @@
 <html>
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
-
-    <!-- Check if Wordpress is running on localhost. If so, load the uglyfied css -->
-    <?php if (substr($_SERVER['REMOTE_ADDR'], 0, 4) == '127.' || $_SERVER['REMOTE_ADDR'] == '::1'): ?>
-      <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css" >
-    <?php else: ?>
-      <link href="<?php echo get_template_directory_uri(); ?>/style.min.css" rel="stylesheet" type="text/css" >
-    <?php endif ?>
+    <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet" type="text/css" >
 
 		<!-- Meta tags -->
+    <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+    <meta name="keywords" content="Personal, Blog, Design">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-
-
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="<?php echo get_template_directory_uri(); ?>/img/logo.png" rel="shortcut icon">
